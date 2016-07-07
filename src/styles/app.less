@@ -17,16 +17,15 @@
 @header_icon_height: 6px;
 @header_flag_height: 10px;
 @header_btn_hover_bg: #ddffdf;
-@header_btn_hover_color: #58b868;
+@header_btn_hover_color: #00A161;
 @menu_border_color: #cfd1d1;
 
 body {
   overflow-x: hidden;
 
 }
-
-.indent1 {
-  margin-top: 100px;
+.indent1{
+  margin-top: 10px;
 }
 
 .indent2 {
@@ -41,6 +40,9 @@ body {
 
 .green {
   color: @green_bg;
+}
+.green_bg{
+  background-color: @green_bg;
 }
 
 .header {
@@ -204,7 +206,7 @@ input[type="text"] {
   border-width: 1px 1px 1px 0;
   border-color: @menu_border_color;
 }
-
+0
 .cart_btn {
   z-index: 2;
   outline: none;
@@ -507,6 +509,7 @@ input[type="text"] {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  .indent1;
 }
 
 .btn-group {
@@ -518,28 +521,28 @@ input[type="text"] {
   outline: none;
   color: white;
   padding: 0 21px 0 21px;
-  background-color: @green;
+  .green_bg;
 }
 
 .btn_h {
   outline: none;
   color: white;
   padding: 0 21px 0 21px;
-  background-color: @green;
+  .green_bg;
 }
 
 .btn_m {
   outline: none;
   color: white;
   padding: 0 21px 0 21px;
-  background-color: @green;
+  .green_bg;
 }
 
 .btn_s {
   outline: none;
   color: white;
   padding: 0 21px 0 21px;
-  background-color: @green;
+  .green_bg;
 }
 
 .sale_banner:hover {
@@ -559,6 +562,7 @@ input[type="text"] {
 }
 
 .price_description {
+  .green;
   font-size: 16px;
   font-weight: bold;
 }
@@ -657,6 +661,7 @@ input[type="text"] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  .indent1;
 }
 
 .articles_views_date {
@@ -668,6 +673,7 @@ input[type="text"] {
 }
 
 .articles_views_views {
+  margin-left: 10px;
   outline: none;
   background-color: transparent;
   color: @grey_color;
@@ -676,7 +682,9 @@ input[type="text"] {
 .articles {
   margin-bottom: 50px;
 }
-
+.products{
+  .indent3;
+}
 .my-flex-container-products {
   display: flex;
   flex-direction: row;
@@ -727,6 +735,10 @@ input[type="text"] {
   color: black;
 }
 
+.buy_link:hover {
+  text-decoration: underline;
+}
+
 .row1 {
   padding-top: 20px;
   display: flex;
@@ -754,7 +766,17 @@ input[type="text"] {
   background-color: #f9fbfb;
   border-width: 1px;
   border-color: @menu_border_color;
-  width: 150px;
+  width: 140px;
+}
+.search_bottom:hover {
+  outline: none;
+  box-shadow: none;
+  border-style: solid;
+  height: 35px;
+  background-color: #f9fbfb;
+  border-width: 1px;
+  border-color: @green_bg;
+  width: 140px;
 }
 
 .search_btn_bottom {
@@ -766,7 +788,6 @@ input[type="text"] {
   font-size: 16px;
   border-style: solid;
   border-width: 1px 1px 1px 0;
-  border-color: @menu_border_color;
 }
 
 .search_btn_bottom:hover {
