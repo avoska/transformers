@@ -19,12 +19,16 @@
 @header_btn_hover_bg: #ddffdf;
 @header_btn_hover_color: #00A161;
 @menu_border_color: #cfd1d1;
+@standart_offset: 43px;
+
+
 
 body {
   overflow-x: hidden;
 
 }
-.indent1{
+
+.indent1 {
   margin-top: 10px;
 }
 
@@ -41,7 +45,8 @@ body {
 .green {
   color: @green_bg;
 }
-.green_bg{
+
+.green_bg {
   background-color: @green_bg;
 }
 
@@ -51,13 +56,15 @@ body {
 }
 
 .my-flex-container-header {
-  height: 40px;
+  padding-left: @standart_offset;
+  height: 44px;
   flex-direction: row;
   display: flex;
   background-color: @green_bg;
 }
 
 .my-flex-block-header {
+  margin-right: 150px;
   display: flex;
 }
 
@@ -76,9 +83,9 @@ a {
 
 .header_lang_btn {
   background-color: transparent;
-  color: @menu_border_color;
+  color: white;
   display: block;
-  height: 40px;
+  height: 44px;
   width: 88px;
   border-style: solid;
   border-width: 0 0.1px 0 0.1px;
@@ -87,21 +94,25 @@ a {
 
 .header_money_btn {
   background-color: transparent;
-  color: @menu_border_color;
+  color: white;
   display: block;
-  height: 40px;
-  width: 60px;
+  height: 44px;
+  width: 64px;
   border-style: solid;
   border-width: 0 0.1px 0 0;
   border-color: @menu_border_color;
 }
 
+.header_menu_offset{
+  margin-left: 73px;
+}
+
 .header_welcome_btn {
   background-color: transparent;
-  color: @menu_border_color;
+  color: white;
   display: block;
-  height: 40px;
-  width: 65px;
+  height: 44px;
+  width: 72px;
   border-style: solid;
   border-width: 0 0.1px 0 0.1px;
   border-color: @menu_border_color;
@@ -109,10 +120,10 @@ a {
 
 .header_login_btn {
   background-color: transparent;
-  color: @menu_border_color;
+  color: white;
   display: block;
-  height: 40px;
-  width: 50px;
+  height: 44px;
+  width: 52px;
   border-style: solid;
   border-width: 0 0.1px 0 0;
   border-color: @menu_border_color;
@@ -120,10 +131,10 @@ a {
 
 .header_help_btn {
   background-color: transparent;
-  color: @menu_border_color;
+  color: white;
   display: block;
-  height: 40px;
-  width: 55px;
+  height: 44px;
+  width: 51px;
   border-style: solid;
   border-width: 0 0.1px 0 0;
   border-color: @menu_border_color;
@@ -154,13 +165,12 @@ a {
   color: @header_btn_hover_color;
 }
 
+
 .my-flex-container-menu {
   height: 74px;
   flex-direction: row;
   align-items: center;
   display: flex;
-  background: url("../img/menu_bg.jpg") center no-repeat;
-  background-size: contain;
 }
 
 .my-flex-block-menu {
@@ -172,22 +182,38 @@ input[type="text"] {
   padding: 0 0 0 10px;
 }
 
+.logo_offset {
+  padding-left: @standart_offset + 14;
+}
+
+.logo{
+  margin-bottom: 13px;
+}
+
+.menu{
+  margin-top: 5px;
+}
+
 .search {
   padding: 0 20px 0 0;
   outline: none;
   box-shadow: none;
   border-style: solid;
-  height: 35px;
+  height: 40px;
   background-color: #f9fbfb;
   border-width: 1px;
   border-color: @menu_border_color;
-  width: 265px;
+  width: 253px;
+}
+
+.search_offset{
+  margin-left: -4px;
 }
 
 .search_btn {
   outline: none;
   background-color: #e5e5e5;
-  height: 39px;
+  height: 42px;
   width: 42px;
   color: @green_bg;
   font-size: 10px;
@@ -198,21 +224,19 @@ input[type="text"] {
 
 .search_btn:hover {
   background-color: @green_bg;
-  height: 39px;
-  width: 42px;
   color: #e5e5e5;
   font-size: 10px;
   border-style: solid;
   border-width: 1px 1px 1px 0;
   border-color: @menu_border_color;
 }
-0
+
 .cart_btn {
   z-index: 2;
   outline: none;
   margin-left: 5px;
   background-color: #e5e5e5;
-  height: 39px;
+  height: 42px;
   width: 42px;
   color: @green_bg;
   font-size: 10px;
@@ -223,8 +247,6 @@ input[type="text"] {
 
 .cart_btn:hover {
   background-color: @green_bg;
-  height: 39px;
-  width: 42px;
   color: @menu_border_color;
   font-size: 10px;
   border-style: solid;
@@ -238,8 +260,8 @@ input[type="text"] {
   font-weight: bold;
   padding-right: 2px;
   background-color: #e5e5e5;
-  height: 39px;
-  width: 50px;
+  height: 42px;
+  width: 45px;
   color: @green_bg;
   font-size: 12px;
   border-style: solid;
@@ -258,17 +280,25 @@ input[type="text"] {
   color: white;
 }
 
+
 .my-flex-container-menu2 {
+  padding-left: @standart_offset + 15;
   height: 60px;
   font-weight: 900;
   display: flex;
   font-size: 14px;
+  margin-top: -10px;
 }
 
 .my-flex-block-menu2 {
   display: flex;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.list_offset {
+  padding-left: 25px;
+
 }
 
 .btn_home {
@@ -317,7 +347,7 @@ input[type="text"] {
   color: white;
   font-size: 12px;
   background-color: orange;
-  margin-left: 90px;
+  margin-left: 65px;
   padding: 0 5px 0 5px;
 }
 
@@ -325,13 +355,14 @@ input[type="text"] {
   color: white;
   font-size: 12px;
   background-color: red;
-  margin-left: 40px;
+  margin-left: 32px;
   padding: 0 3px 0 3px;
 }
 
+
 .slider {
   font-size: 100px;
-  height: 390px;
+  height: 550px;
   color: white;
   background-color: @green_bg;
 }
@@ -344,7 +375,9 @@ input[type="text"] {
   align-items: center;
 }
 
+
 .my-flex-container-demo1 {
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -403,15 +436,30 @@ input[type="text"] {
   padding: 5px 10px 5px 10px;
 }
 
+
 .my-flex-container-presentation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-start;
+
 }
 
-.my-flex-block-presentation {
-  flex: 12 3 100px;
+.my-flex-block-presentation1 {
+
+
+}
+
+.position_presentation1{
+
+}
+
+.position_presentation2{
+  margin-right: 500px;
+
+}
+
+.position_presentation3{
+
 }
 
 .img_presentation {
@@ -425,17 +473,23 @@ input[type="text"] {
   height: 280px;
 }
 
+
 .my-flex-container-separator {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 50px;
 }
 
 .separator_text {
   font-size: 16px;
   color: @grey_color;
   background-color: transparent;
+}
+
+.my-flex-block-separator{
+
 }
 
 .separator_text:hover {
@@ -447,11 +501,16 @@ input[type="text"] {
   height: 9px;
   width: 1009px;
 }
+.separator_img2 {
+  height: 9px;
+  width: 1009px;
+}
 
 .separator_img_img {
   display: block;
   width: 100%;
 }
+
 
 .fa-angle-left {
   display: block;
@@ -482,18 +541,31 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
+
 .my-flex-container-new1 {
+  margin-top: 33px;
+  margin-left: 75px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.my-flex-block-presentation {
+.my-flex-block-presentation1 {
+
+  display: flex;
+}
+
+.my-flex-block-presentation2 {
   display: flex;
 }
 
 .my-flex-block-presentation3 {
+  display: flex;
+}
+
+.my-flex-block-presentation4 {
+  margin-left: -7px;
   display: flex;
 }
 
@@ -515,35 +587,9 @@ input[type="text"] {
 .btn-group {
   width: 272px;
   display: block;
+  margin: 5px 0 3px 0;
 }
 
-.btn_d {
-  outline: none;
-  color: white;
-  padding: 0 21px 0 21px;
-  .green_bg;
-}
-
-.btn_h {
-  outline: none;
-  color: white;
-  padding: 0 21px 0 21px;
-  .green_bg;
-}
-
-.btn_m {
-  outline: none;
-  color: white;
-  padding: 0 21px 0 21px;
-  .green_bg;
-}
-
-.btn_s {
-  outline: none;
-  color: white;
-  padding: 0 21px 0 21px;
-  .green_bg;
-}
 
 .sale_banner:hover {
   opacity: 0.7;
@@ -580,6 +626,7 @@ input[type="text"] {
 .new_prod_stars:hover {
   color: yellow;
 }
+
 
 .my-flex-container-featured_products {
   display: flex;
@@ -649,6 +696,7 @@ input[type="text"] {
   outline: none;
 }
 
+
 .my-flex-container-articles1 {
   display: flex;
   flex-direction: row;
@@ -682,9 +730,11 @@ input[type="text"] {
 .articles {
   margin-bottom: 50px;
 }
-.products{
+
+.products {
   .indent3;
 }
+
 .my-flex-container-products {
   display: flex;
   flex-direction: row;
@@ -696,6 +746,7 @@ input[type="text"] {
   background-color: @menu_border_color;
 }
 
+
 .my-flex-container-info1 {
   display: flex;
   flex-direction: row;
@@ -704,12 +755,14 @@ input[type="text"] {
   margin-bottom: 40px;
 }
 
+
 .my-flex-container-info2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 
 .my-flex-block-info1 {
   display: flex;
@@ -768,6 +821,7 @@ input[type="text"] {
   border-color: @menu_border_color;
   width: 140px;
 }
+
 .search_bottom:hover {
   outline: none;
   box-shadow: none;
@@ -832,8 +886,50 @@ input[type="text"] {
   color: white;
 }
 
+.test-aria {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 
+.my-flex-container-test {
+  display: flex;
+}
 
+.rect {
+  background-color: red;
+  height: 120px;
+  width: 120px;
+}
+
+.rect:hover {
+  animation-iteration-count: infinite;
+  animation-name: testAnimation;
+  animation-duration: 10s;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+}
+
+@keyframes testAnimation {
+  0% {
+    background-color: red;
+  }
+  30% {
+    width: 500px;
+    background-color: yellow;
+  }
+  60% {
+    width: 120px;
+    background-color: red;
+  }
+  90% {
+    width: 500px;
+    background-color: blue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
 
 

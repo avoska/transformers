@@ -1,652 +1,576 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Transformers</title>
-
-    <link rel="stylesheet" href="build/css/app.css" />
-    <link rel="stylesheet" href="src/styles/flexboxgrid.min.css" />
-    <link rel="stylesheet" href="src/fonts/css/font-awesome.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title>Transformers</title>
+	<link rel="stylesheet" href="build/css/app.css" />
+	<link rel="stylesheet" href="src/styles/flexboxgrid.min.css" />
+	<link rel="stylesheet" href="src/fonts/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<section class="header">
-    <div class="my-flex-container-header row">
-        <div class="my-flex-block-menu col-xs-2 col-xs-offset-1">
-            <button class="header_lang_btn"><img src="src/img/us_flag.jpg" class="header_flag_size"> English <img src="src/img/arrow_down.png" class="header_icon_size"></button>
-            <button class="header_money_btn">$ USD <img src="src/img/arrow_down.png" class="header_icon_size"></button>
-        </div>
-        <div class="my-flex-block-header col-xs-2 col-xs-offset-6">
-            <button class="header_welcome_btn"> Welcome</button>
-            <button class="header_login_btn"> Login</button>
-            <button class="header_help_btn"> Help <img src="src/img/arrow_down.png" class="header_icon_size"></button>
-        </div>
-    </div>
-</section>
-<section class="menu">
-    <div class="my-flex-container-menu row">
-        <div class="my-flex-block-menu col-xs-4 col-xs-offset-1">
-            <img src="src/img/logo.jpg">
-        </div>
-        <div class="my-flex-block-menu col-xs-4 col-xs-offset-2">
-            <input type="text" placeholder="Search here" class="search">
-            <button class="search_btn">
-                <i class="fa fa-search fa-1x"></i> <span class="sr-only"></span>Search
-            </button>
-            <button class="cart_btn">
-                <span class="count_cart">0</span> <i class="fa fa-shopping-cart fa-1x"></i> <span class="sr-only"></span>
-                <br />
-                Cart
-            </button>
-            <button class="spend_btn">
-                $ 0.00
-            </button>
-        </div>
-    </div>
-</section>
-<section class="menu2">
-    <div class="my-flex-container-menu2 row">
-        <div class="my-flex-block-menu2 ooo  col-xs-offset-1">
-            <button class="btn_home">
-                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                FASHION <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                ELECTRONICS <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_multilevel">
-                <span class="label_multi"> Sale </span>
-                <br />
-                MULTI LEVEL <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                PRODUCTS <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                CMS <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_stores">
-                <span class="label_stores"> 14+ </span>
-                <br />
-                STORES <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                PAGES <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                BLOG <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="my-flex-block-menu2">
-            <button class="btn_home">
-                BUY THEME
-            </button>
-        </div>
-    </div>
-</section>
-<section class="slider">
-    <div class="my-flex-container-slider">
-        <div class="my-flex-block-slider">
-            Slider
-        </div>
-    </div>
-</section>
-<section class="demo">
-    <div class="my-flex-container-demo1">
-        <div class="my-flex-block-demo1 col-xs-3 col-xs-offset-3" align="right">
-            <span class="big_text">WELCOME TO THE</span>
-        </div>
-        <div class="my-flex-block-demo1 col-xs-5">
-            <span class="small-text1">Transformer theme is an elegant, powerful and fully responsive prestashop theme with</span>
-            <br />
-            <span class="small-text2">modern design. Suitable for every type of store.</span>
-        </div>
-    </div>
-    <div class="my-flex-container-demo2">
-        <div class="my-flex-block-demo2 col-xs-4" align="right">
-            <span class="big_text"><span class="green">TRANSFORMER</span> DEMO STORE</span>
-        </div>
-        <div class="my-flex-block-demo2 col-xs-4">
-            <button class="btn-buy-theme">Buy this theme</button>
 
-        </div>
-    </div>
+<section class="header">
+	<div class="my-flex-container-header">
+		<div class="my-flex-block-menu col-lg-2 col-lg-offset-1 col-lg-offset-2">
+			<button class="header_lang_btn"><img src="src/img/us_flag.jpg" class="header_flag_size"> English <img src="src/img/arrow_down.png" class="header_icon_size"></button>
+			<button class="header_money_btn">$ USD <img src="src/img/arrow_down.png" class="header_icon_size"></button>
+		</div>
+		<div class="header_menu_offset">
+		</div>
+		<div class="my-flex-block-header col-lg-2 col-lg-offset-4">
+			<button class="header_welcome_btn"> Welcome</button>
+			<button class="header_login_btn"> Login</button>
+			<button class="header_help_btn"> Help <img src="src/img/arrow_down.png" class="header_icon_size"></button>
+		</div>
+	</div>
 </section>
+
+<section class="menu">
+	<div class="my-flex-container-menu logo_offset row">
+		<div class="my-flex-block-menu col-lg-4 col-lg-offset-1 col-lg-offset-2">
+			<img src="src/img/logo.jpg" class="logo">
+		</div>
+		<div class="search_offset">
+		</div>
+		<div class="my-flex-block-menu col-lg-4 col-lg-offset-2 col-lg-offset-1 search_offset">
+			<input type="text" placeholder="Search here" class="search">
+			<button class="search_btn">
+				<i class="fa fa-search fa-2x"></i> <span class="sr-only"></span>Search
+			</button>
+			<button class="cart_btn">
+				<span class="count_cart">0</span> <i class="fa fa-shopping-cart fa-2x"></i> <span class="sr-only"></span>
+				<br />
+				Cart
+			</button>
+			<button class="spend_btn">
+				$ 0.00
+			</button>
+		</div>
+	</div>
+</section>
+
+<section class="menu2">
+	<div class="my-flex-container-menu2 row">
+		<div class="my-flex-block-menu2 list_offset col-lg-offset-1 col-lg-offset-2">
+			<button class="btn_home">
+				<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				FASHION <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				ELECTRONICS <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_multilevel">
+				<span class="label_multi"> Sale </span>
+				<br />
+				MULTI LEVEL <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				PRODUCTS <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				CMS <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_stores">
+				<span class="label_stores"> 14+ </span>
+				<br />
+				STORES <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				PAGES <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				BLOG <i class="fa fa-angle-down" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="my-flex-block-menu2">
+			<button class="btn_home">
+				BUY THEME
+			</button>
+		</div>
+	</div>
+</section>
+
+<section class="slider">
+	<div class="my-flex-container-slider">
+		<div class="my-flex-block-slider">
+			Slider
+		</div>
+	</div>
+</section>
+
+<section class="demo">
+	<div class="my-flex-container-demo1">
+		<div class="my-flex-block-demo1 col-lg-3 col-lg-offset-3" align="right">
+			<span class="big_text">WELCOME TO THE</span>
+		</div>
+		<div class="my-flex-block-demo1 col-lg-5">
+			<span class="small-text1">Transformer theme is an elegant, powerful and fully responsive prestashop theme with</span>
+			<br />
+			<span class="small-text2">modern design. Suitable for every type of store.</span>
+		</div>
+	</div>
+	<div class="my-flex-container-demo2">
+		<div class="my-flex-block-demo2 col-lg-4" align="right">
+			<span class="big_text"><span class="green">TRANSFORMER</span> DEMO STORE</span>
+		</div>
+		<div class="my-flex-block-demo2 col-lg-4">
+			<button class="btn-buy-theme">Buy this theme</button>
+
+		</div>
+	</div>
+</section>
+
 <section class="presentation">
-    <div class="my-flex-container-presentation">
-        <div class="row">
-            <div class="my-flex-block-presentation col-xs-4">
-                <img src="src/img/img_presentation.png" class="img_presentation">
-            </div>
-            <div class="my-flex-block-presentation col-xs-4">
-                <img src="src/img/img_presentation.png" class="img_presentation">
-            </div>
-            <div class="my-flex-block-presentation col-xs-4">
-                <img src="src/img/img_presentation.png" class="img_presentation">
-            </div>
-        </div>
-    </div>
+	<div class="my-flex-container-presentation">
+			<div class="my-flex-block-presentation2 test1 col-lg-3 col-lg-offset-2">
+				<img src="src/img/img_presentation.png" class="img_presentation">
+			</div>
+			<div class="my-flex-block-presentation2 test2 col-lg-3">
+				<img src="src/img/img_presentation.png" class="img_presentation">
+			</div>
+			<div class="my-flex-block-presentation2 test3 col-lg-3">
+				<img src="src/img/img_presentation.png" class="img_presentation">
+			</div>
+		</div>
 </section>
 
 <section class="separator">
-    <div class="my-flex-container-separator">
-        <div class="my-flex-block-separator col-xs-2" align="right">
-            <button class="separator_text"> NEW PRODUCTS</button>
-        </div>
-        <div class="my-flex-block-separator col-xs-9 separator_img" align="left">
-            <img src="src/img/separator.png" class="separator_img_img">
-        </div>
-        <div class="my-flex-block-separator col-xs-2">
-            <button class="navigation_btn_left">
-                <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-            </button>
-            <button class="navigation_btn_right">
-                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-            </button>
-        </div>
-    </div>
+	<div class="my-flex-container-separator">
+		<div class="my-flex-block-separator col-lg-offset-2" align="right">
+			<button class="separator_text"> NEW PRODUCTS</button>
+		</div>
+		<div class="my-flex-block-separator col-lg-7 separator_img" align="left">
+			<img src="src/img/separator.png" class="separator_img_img">
+		</div>
+		<div class="my-flex-block-separator">
+			<button class="navigation_btn_left">
+				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+			</button>
+			<button class="navigation_btn_right">
+				<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+			</button>
+		</div>
+	</div>
 </section>
 
 <section class="new">
-    <div class="my-flex-container-new1">
-        <div class="row">
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/new_img.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/new_img.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/new_img.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/new_img.png" class="new_img">
-            </div>
-        </div>
-    </div>
-    <div class="my-flex-container-new2">
-        <div class="row">
-            <div class="my-flex-block-presentation2 col-xs-3" align="center">
-                <div class="btn-group">
-                    <button class="btn_d">80
-                        <br />
-                                          days
-                    </button>
-                    <button class="btn_h">80
-                        <br />
-                                          hrs
-                    </button>
-                    <button class="btn_m">80
-                        <br />
-                                          min
-                    </button>
-                    <button class="btn_s">80
-                        <br />
-                                          sec
-                    </button>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation2 col-xs-3" align="center">
-                <div class="btn-group">
-                    <button class="btn_d">80
-                        <br />
-                                          days
-                    </button>
-                    <button class="btn_h">80
-                        <br />
-                                          hrs
-                    </button>
-                    <button class="btn_m">80
-                        <br />
-                                          min
-                    </button>
-                    <button class="btn_s">80
-                        <br />
-                                          sec
-                    </button>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation2 col-xs-3" align="center">
-                <div class="btn-group">
-                    <button class="btn_d">80
-                        <br />
-                                          days
-                    </button>
-                    <button class="btn_h">80
-                        <br />
-                                          hrs
-                    </button>
-                    <button class="btn_m">80
-                        <br />
-                                          min
-                    </button>
-                    <button class="btn_s">80
-                        <br />
-                                          sec
-                    </button>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation2 col-xs-3" align="center">
-                <div class="btn-group">
-                    <button class="btn_d">80
-                        <br />
-                                          days
-                    </button>
-                    <button class="btn_h">80
-                        <br />
-                                          hrs
-                    </button>
-                    <button class="btn_m">80
-                        <br />
-                                          min
-                    </button>
-                    <button class="btn_s">80
-                        <br />
-                                          sec
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="my-flex-container-new3">
-        <div class="row">
-            <div class="my-flex-block-presentation3 col-xs-3" align="center">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        HOT NEW WOMEN'S THICKEN WARM
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="new_prod_stars">
-                            <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="center">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        HOT NEW WOMEN'S THICKEN WARM
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="new_prod_stars">
-                            <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="center">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        HOT NEW WOMEN'S THICKEN WARM
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="new_prod_stars">
-                            <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="center">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        HOT NEW WOMEN'S THICKEN WARM
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="new_prod_stars">
-                            <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="my-flex-container-new1">
+		<div class="row">
+			<div class="my-flex-block-presentation1 col-lg-3">
+				<img src="src/img/new_img.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation2 col-lg-3">
+				<img src="src/img/new_img.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3">
+				<img src="src/img/new_img.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation4 col-lg-3">
+				<img src="src/img/new_img.png" class="new_img">
+			</div>
+		</div>
+	</div>
+
+	<div class="my-flex-container-new3">
+		<div class="row">
+			<div class="my-flex-block-presentation3 col-lg-3" align="center">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						HOT NEW WOMEN'S THICKEN WARM
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="new_prod_stars">
+							<i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="center">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						HOT NEW WOMEN'S THICKEN WARM
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="new_prod_stars">
+							<i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="center">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						HOT NEW WOMEN'S THICKEN WARM
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="new_prod_stars">
+							<i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="center">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						HOT NEW WOMEN'S THICKEN WARM
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="price_description">$3.00</span> <span class="strikeout">$19.00</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="new_prod_stars">
+							<i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="separator">
-    <div class="my-flex-container-separator">
-        <div class="my-flex-block-separator col-xs-2" align="right">
-            <button class="separator_text"> FEATURED PRODUCTS</button>
-        </div>
-        <div class="my-flex-block-separator col-xs-7 separator_img" align="left">
-            <img src="src/img/separator_short.png" class="separator_img_img">
-        </div>
-        <div class="my-flex-block-separator col-xs-7 separator_img" align="left">
-            <img src="src/img/sale_banner.png" class="sale_banner">
-        </div>
-    </div>
+	<div class="my-flex-container-separator">
+		<div class="my-flex-block-separator2 col-lg-2 col-lg-offset-1" align="right">
+			<button class="separator_text"> FEATURED PRODUCTS</button>
+		</div>
+		<div class="my-flex-block-separator col-lg-5 separator_img2" align="left">
+			<img src="src/img/separator_featured.png" class="separator_img_img">
+		</div>
+		<div class="my-flex-block-separator col-lg-7 separator_img" align="left">
+			<img src="src/img/sale_banner.png" class="sale_banner">
+		</div>
+	</div>
 </section>
 
 <section class="featured_products">
-    <div class="row indent2">
-        <div class="my-flex-container-featured_products">
-            <div class="my-flex-block-featured_products col-xs-2 col-xs-offset-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+	<div class="row indent2">
+		<div class="my-flex-container-featured_products">
+			<div class="my-flex-block-featured_products col-lg-2 col-lg-offset-6">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                           Add to cart
                     </span>
-                </button>
-            </div>
-            <div class="my-flex-block-featured_products col-xs-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+				</button>
+			</div>
+			<div class="my-flex-block-featured_products col-lg-2">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                         Add to cart
                     </span>
-                </button>
+				</button>
 
-            </div>
-            <div class="my-flex-block-featured_products col-xs-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+			</div>
+			<div class="my-flex-block-featured_products col-lg-2">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                         Add to cart
                     </span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="my-flex-container-featured_products">
-            <div class="my-flex-block-featured_products col-xs-2 col-xs-offset-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="my-flex-container-featured_products">
+			<div class="my-flex-block-featured_products col-lg-2 col-lg-offset-6">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                           Add to cart
                     </span>
-                </button>
-            </div>
-            <div class="my-flex-block-featured_products col-xs-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+				</button>
+			</div>
+			<div class="my-flex-block-featured_products col-lg-2">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                         Add to cart
                     </span>
-                </button>
+				</button>
 
-            </div>
-            <div class="my-flex-block-featured_products col-xs-2">
-                <img src="src/img/small_lot.png">
-            </div>
-            <div class="my-flex-block-featured_products2 col-xs-2">
-                <button class="small__description">SHOE EXAMPLE SIZE L</button>
-                <button class="small__price">$39.89</button>
-                <button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
+			</div>
+			<div class="my-flex-block-featured_products col-lg-2">
+				<img src="src/img/small_lot.png">
+			</div>
+			<div class="my-flex-block-featured_products2 col-lg-2">
+				<button class="small__description">SHOE EXAMPLE SIZE L</button>
+				<button class="small__price">$39.89</button>
+				<button class="small__cart"><i class="fa fa-shopping-cart fa-2x"></i>
                     <span class="slide_btn">
                         Add to cart
                     </span>
-                </button>
-            </div>
-        </div>
-    </div>
+				</button>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="separator">
-    <div class="my-flex-container-separator">
-        <div class="my-flex-block-separator col-xs-2" align="right">
-            <button class="separator_text"> FEATURED ARTICLES</button>
-        </div>
-        <div class="my-flex-block-separator col-xs-9 separator_img" align="left">
-            <img src="src/img/separator.png" class="separator_img_img">
-        </div>
-        <div class="my-flex-block-separator col-xs-2">
-            <button class="navigation_btn_left">
-                <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-            </button>
-            <button class="navigation_btn_right">
-                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-            </button>
-        </div>
-    </div>
+	<div class="my-flex-container-separator">
+		<div class="my-flex-block-separator col-lg-2" align="right">
+			<button class="separator_text"> FEATURED ARTICLES</button>
+		</div>
+		<div class="my-flex-block-separator col-lg-7 separator_img" align="left">
+			<img src="src/img/separator.png" class="separator_img_img">
+		</div>
+		<div class="my-flex-block-separator col-lg-2">
+			<button class="navigation_btn_left">
+				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+			</button>
+			<button class="navigation_btn_right">
+				<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+			</button>
+		</div>
+	</div>
 </section>
-<!-- ARTICLES-->
+
 <section class="articles">
-    <div class="my-flex-container-articles1">
-        <div class="row">
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/articles.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/articles.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/articles.png" class="new_img">
-            </div>
-            <div class="my-flex-block-presentation col-xs-3">
-                <img src="src/img/articles.png" class="new_img">
-            </div>
-        </div>
-    </div>
-    <div class="my-flex-container-articles3">
-        <div class="row">
-            <div class="my-flex-block-presentation3 col-xs-3" align="left">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        PREDEFINED LAYOUTS D
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="articles_views">
-                            <button class="articles_views_date">2014-04-6</button>
-                        </button>
-                        <button class="articles_views">
-                            <button class="articles_views_views">
-                                <i class="fa fa-eye" aria-hidden="true"></i>19944
-                            </button>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="left">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        PREDEFINED LAYOUTS D
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="articles_views">
-                            <button class="articles_views_date">
-                                2014-04-6
-                            </button>
-                        </button>
-                        <button class="articles_views">
-                            <button class="articles_views_views">
-                                <i class="fa fa-eye" aria-hidden="true"></i>19944
-                            </button>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="left">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        PREDEFINED LAYOUTS D
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="articles_views">
-                            <button class="articles_views_date">
-                                2014-04-6
-                            </button>
-                        </button>
-                        <button class="articles_views">
-                            <button class="articles_views_views">
-                                <i class="fa fa-eye" aria-hidden="true"></i>19944
-                            </button>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="my-flex-block-presentation3 col-xs-3" align="left">
-                <div class="btn-group" align="center">
-                    <button class="new_prod_description">
-                        PREDEFINED LAYOUTS D
-                    </button>
-                    <div class="btn-group">
-                        <button class="new_prod_description">
-                            <span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="articles_views">
-                            <button class="articles_views_date">
-                                2014-04-6
-                            </button>
-                        </button>
-                        <button class="articles_views">
-                            <button class="articles_views_views">
-                                <i class="fa fa-eye" aria-hidden="true"></i>19944
-                            </button>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="my-flex-container-articles1">
+		<div class="row">
+			<div class="my-flex-block-presentation col-lg-3">
+				<img src="src/img/articles.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation col-lg-3">
+				<img src="src/img/articles.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation col-lg-3">
+				<img src="src/img/articles.png" class="new_img">
+			</div>
+			<div class="my-flex-block-presentation col-lg-3">
+				<img src="src/img/articles.png" class="new_img">
+			</div>
+		</div>
+	</div>
+	<div class="my-flex-container-articles3">
+		<div class="row">
+			<div class="my-flex-block-presentation3 col-lg-3" align="left">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						PREDEFINED LAYOUTS D
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="articles_views">
+							<button class="articles_views_date">2014-04-6</button>
+						</button>
+						<button class="articles_views">
+							<button class="articles_views_views">
+								<i class="fa fa-eye" aria-hidden="true"></i>19944
+							</button>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="left">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						PREDEFINED LAYOUTS D
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="articles_views">
+							<button class="articles_views_date">
+								2014-04-6
+							</button>
+						</button>
+						<button class="articles_views">
+							<button class="articles_views_views">
+								<i class="fa fa-eye" aria-hidden="true"></i>19944
+							</button>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="left">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						PREDEFINED LAYOUTS D
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="articles_views">
+							<button class="articles_views_date">
+								2014-04-6
+							</button>
+						</button>
+						<button class="articles_views">
+							<button class="articles_views_views">
+								<i class="fa fa-eye" aria-hidden="true"></i>19944
+							</button>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="my-flex-block-presentation3 col-lg-3" align="left">
+				<div class="btn-group" align="center">
+					<button class="new_prod_description">
+						PREDEFINED LAYOUTS D
+					</button>
+					<div class="btn-group">
+						<button class="new_prod_description">
+							<span class="small-text1">PrestaShop is the most reliable and flexible Open-source e-commerce software. Since 2007, PrestaShop has...</span>
+						</button>
+					</div>
+					<div class="btn-group">
+						<button class="articles_views">
+							<button class="articles_views_date">
+								2014-04-6
+							</button>
+						</button>
+						<button class="articles_views">
+							<button class="articles_views_views">
+								<i class="fa fa-eye" aria-hidden="true"></i>19944
+							</button>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="separator">
-    <div class="my-flex-container-separator">
-        <div class="my-flex-block-separator col-xs-2" align="right">
-            <button class="separator_text"> PRODUCT BRANDS</button>
-        </div>
-        <div class="my-flex-block-separator col-xs-9 separator_img" align="left">
-            <img src="src/img/separator.png" class="separator_img_img">
-        </div>
-        <div class="my-flex-block-separator col-xs-2">
-            <button class="navigation_btn_left">
-                <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-            </button>
-            <button class="navigation_btn_right">
-                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-            </button>
-        </div>
-    </div>
+	<div class="my-flex-container-separator">
+		<div class="my-flex-block-separator col-lg-2" align="right">
+			<button class="separator_text"> PRODUCT BRANDS</button>
+		</div>
+		<div class="my-flex-block-separator col-lg-9 separator_img" align="left">
+			<img src="src/img/separator.png" class="separator_img_img">
+		</div>
+		<div class="my-flex-block-separator col-lg-2">
+			<button class="navigation_btn_left">
+				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+			</button>
+			<button class="navigation_btn_right">
+				<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+			</button>
+		</div>
+	</div>
 </section>
 
 <section class="products">
-    <div class="my-flex-container-products">
-        <div class="row">
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-            <div class="my-flex-block-products col-xs-2">
-                <img src="src/img/product_logo.png" class="product_logo">
-            </div>
-        </div>
-    </div>
+	<div class="my-flex-container-products">
+		<div class="row">
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+			<div class="my-flex-block-products col-lg-2">
+				<img src="src/img/product_logo.png" class="product_logo">
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="info">
-    <div class="my-flex-container-info1">
-        <div class="row1">
-            <div class="my-flex-block-info1 col-xs-3 ">
-                <span class="info__header">ABOUT US</span>
+	<div class="my-flex-container-info1">
+		<div class="row1">
+			<div class="my-flex-block-info1 col-lg-3 ">
+				<span class="info__header">ABOUT US</span>
                 <span>
                     <p class="info__text">Transformer theme is an elegant, powerful and fully responsive prestashop theme with modern design. Suitable for every type of store.</p>
                     <p class="info__text">This is a custom block edited from admin panel.You can insert any content here.</p>
                     <p class="info__text">Any orders placed through this store will not be honored or fulfilled</p>
                     <p class="info__text">
-                        <a href="#" class="buy_link">Buy this theme</a>
+	                    <a href="#" class="buy_link">Buy this theme</a>
                     </p>
                 </span>
-            </div>
-            <div class="my-flex-block-info col-xs-3">
-                <span class="info__header">ABOUT US</span>
+			</div>
+			<div class="my-flex-block-info col-lg-3">
+				<span class="info__header">ABOUT US</span>
                 <span>
                     <p class="info__text">Transformer theme is an elegant, powerful and fully responsive prestashop theme with modern design. Suitable for every type of store.</p>
                     <p class="info__text">This is a custom block edited from admin panel.You can insert any content here.</p>
                     <p class="info__text">Any orders placed through this store will not be honored or fulfilled</p>
                     <p class="info__text">
-                        <a href="#" class="buy_link">Buy this theme</a>
+	                    <a href="#" class="buy_link">Buy this theme</a>
                     </p>
                 </span>
-            </div>
-            <div class="my-flex-block-info col-xs-2">
-                <span class="info__header">CONTACT US</span>
+			</div>
+			<div class="my-flex-block-info col-lg-2">
+				<span class="info__header">CONTACT US</span>
                 <span class="info__text">
                     <p class="info__text">Call Us +001 123 123 </p>
                     <p class="info__text">support@transformer.com </p>
@@ -656,9 +580,9 @@
                     <p class="info__text">From Monday to Friday </p>
                     <p class="info__text">9:00 a.m. to 5:00 p.m. </p>
                 </span>
-            </div>
-            <div class="my-flex-block-info col-xs-2">
-                <span class="info__header">CONTACT US</span>
+			</div>
+			<div class="my-flex-block-info col-lg-2">
+				<span class="info__header">CONTACT US</span>
                 <span class="info__text">
                     <p class="info__text">Call Us +001 123 123 </p>
                     <p class="info__text">support@transformer.com </p>
@@ -668,63 +592,63 @@
                     <p class="info__text">From Monday to Friday </p>
                     <p class="info__text">9:00 a.m. to 5:00 p.m. </p>
                 </span>
-            </div>
-        </div>
-    </div>
-    <div class="my-flex-container-info2">
-        <div class="my-flex-block-info1 col-xs-3 col-xs-offset-1">
-            <span class="info__header">CATALOG</span>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-        </div>
-        <div class="my-flex-block-info1 col-xs-3">
-            <span class="info__header">SUPPORT</span>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-            <button class="about__link">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
-            </button>
-        </div>
-        <div class="my-flex-block-info1 col-xs-2">
-            <span class="info__header">NEWSLETTER</span> <span class="info__text">Subscribe to our newsletter.</span>
-            <div class="group">
-                <input type="text" placeholder="Your e-mail" class="search_bottom">
-                <button class="search_btn_bottom">
-                    GO!
-                </button>
-            </div>
-        </div>
-        <div class="my-flex-block-info1 col-xs-3">
-            <span class="info__header">GET SOCIAL</span>
-            <div class="group">
-                <span class="about__link margin-right"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></span>
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
+	<div class="my-flex-container-info2">
+		<div class="my-flex-block-info1 col-lg-3 col-lg-offset-1">
+			<span class="info__header">CATALOG</span>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+		</div>
+		<div class="my-flex-block-info1 col-lg-3">
+			<span class="info__header">SUPPORT</span>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+			<button class="about__link">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> Specials
+			</button>
+		</div>
+		<div class="my-flex-block-info1 col-lg-2">
+			<span class="info__header">NEWSLETTER</span> <span class="info__text">Subscribe to our newsletter.</span>
+			<div class="group">
+				<input type="text" placeholder="Your e-mail" class="search_bottom">
+				<button class="search_btn_bottom">
+					GO!
+				</button>
+			</div>
+		</div>
+		<div class="my-flex-block-info1 col-lg-3">
+			<span class="info__header">GET SOCIAL</span>
+			<div class="group">
+				<span class="about__link margin-right"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></span> <span class="about__link margin-right"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
 </section>
+
 <section class="footer">
-    <div class="my-flex-container">
-        <div class="row">
-            <div class="my-flex-block col-xs-11 col-xs-offset-1">
-                <span class="footer__rights">© 2014 Powered by Dmitry Koncha™. All Rights Reserved</span>
+	<div class="my-flex-container">
+		<div class="row">
+			<div class="my-flex-block col-lg-11 col-lg-offset-1">
+				<span class="footer__rights">© 2014 Powered by Dmitry Koncha™. All Rights Reserved</span>
 
-            </div>
-        </div>
-    </div>
-
+			</div>
+		</div>
+	</div>
 </section>
-
 
 </body>
+►
 </html>
