@@ -560,7 +560,6 @@ input[type="text"] {
 }
 
 .my-flex-block-presentation {
-
 }
 
 .new_img{
@@ -573,6 +572,9 @@ input[type="text"] {
 
 .my-flex-block-presentation3{
   margin: 0 12px 0 12px;
+}
+
+.featured_article_padding{
 }
 
 
@@ -593,10 +595,21 @@ input[type="text"] {
 
 .btn-group {
   width: 272px;
-  display: block;
   margin: 5px 0 3px 0;
+  align-content: left;
 }
 
+.description_link{
+  color: #666666;
+}
+
+.description_link_dark{
+  text-decoration: underline;
+  color: #28342f;
+}
+.description_link_dark:hover{
+  color: @green_bg;
+}
 
 .sale_banner:hover {
   opacity: 0.7;
@@ -606,6 +619,7 @@ input[type="text"] {
   outline: none;
   font-size: 14px;
   background-color: transparent;
+  margin-bottom: 10px;
 }
 
 .new_prod_description:hover {
@@ -634,6 +648,10 @@ input[type="text"] {
   color: yellow;
 }
 
+
+.product_logo{
+  padding: 0 12px 0 12px;
+}
 
 .featured_products{
   margin-top: 50px;
@@ -728,6 +746,15 @@ input[type="text"] {
 }
 
 
+.separator_img_img_articles{
+  width: 950px;
+  display: block;
+}
+
+.my-flex-block-separator2{
+  padding-left: -40px;
+}
+
 .my-flex-container-articles1 {
   display: flex;
   flex-direction: row;
@@ -790,8 +817,7 @@ input[type="text"] {
 .my-flex-container-info2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -802,16 +828,22 @@ input[type="text"] {
   align-items: flex-start;
 }
 
+.my-flex-block-info{
+  padding-left: 100px;
+}
+
 .info__header {
   color: grey;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-left: 50px;
 }
 
 .info__text {
   font-size: 14px;
   color: grey;
+  margin-left: 50px;
 }
 
 .buy_link {
@@ -836,9 +868,22 @@ input[type="text"] {
   color: @grey_color;
   outline: none;
   margin-bottom: 10px;
+  margin-left: 50px;
 }
 
 .about__link:hover {
+  color: @green_bg;
+}
+
+.about__link2 {
+  background-color: transparent;
+  color: @grey_color;
+  outline: none;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.about__link2:hover {
   color: @green_bg;
 }
 
@@ -891,10 +936,12 @@ input[type="text"] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
 .margin-right {
-  margin-right: 10px;
+  padding: 0 !important;
+  margin: 0 15px 0 0;
 }
 
 .indent__bottom {
