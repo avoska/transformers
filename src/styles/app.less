@@ -53,7 +53,10 @@ body {
   background-color: @green_bg;
 }
 
+
+
 .header {
+  max-width: 100%;
   font-family: Tahoma;
   font-size: 12px;
 }
@@ -168,6 +171,14 @@ a {
   color: @header_btn_hover_color;
 }
 
+.min_width_header_btn_large{
+    min-width: 75px!important;
+  }
+
+  .min_width_header_btn_small{
+    min-width: 50px;
+  }
+
 
 .my-flex-container-menu {
   height: 74px;
@@ -218,6 +229,7 @@ input[type="text"] {
   background-color: #e5e5e5;
   height: 42px;
   width: 42px;
+  min-width: 42px;
   color: @green_bg;
   font-size: 10px;
   border-style: solid;
@@ -235,6 +247,7 @@ input[type="text"] {
 }
 
 .cart_btn {
+  min-width: 42px;
   z-index: 2;
   outline: none;
   margin-left: 5px;
@@ -265,6 +278,7 @@ input[type="text"] {
   background-color: #e5e5e5;
   height: 42px;
   width: 45px;
+  min-width: 45px;
   color: @green_bg;
   font-size: 12px;
   border-style: solid;
@@ -285,6 +299,7 @@ input[type="text"] {
 
 
 .my-flex-container-menu2 {
+  max-width: 100%;
   padding-left: @standart_offset + 15;
   height: 60px;
   font-weight: 900;
@@ -467,7 +482,8 @@ input[type="text"] {
 
 .img_presentation {
   margin: 0 11px 0 10px;
-  max-width: 100%;
+  max-width: 375px;
+  width: 100%;
   height: auto;
 }
 
@@ -498,6 +514,7 @@ input[type="text"] {
 
 .my-flex-block-separator1{
   margin-left: -60px;
+  min-width: 43px;
 
 }
 
@@ -650,7 +667,6 @@ input[type="text"] {
 
 
 .product_logo{
-  padding: 0 12px 0 12px;
 }
 
 .featured_products{
@@ -794,10 +810,8 @@ input[type="text"] {
 }
 
 .my-flex-container-products {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: inline;
+
 }
 
 .info {
