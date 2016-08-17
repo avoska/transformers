@@ -4,9 +4,6 @@
 @import "core/mixins.less";
 @import "core/template.less";
 @import "core/typo.less";
-
-
-
 // Here we go :)
 @import "mobile.less";
 
@@ -20,12 +17,6 @@
 @menu_border_color: #cfd1d1;
 @standart_offset: 43px;
 
-
-
-body {
-  overflow-x: hidden;
-
-}
 
 .indent1 {
   margin-top: 10px;
@@ -41,7 +32,7 @@ body {
   margin-bottom: 50px;
 }
 
-.indent4{
+.indent4 {
   margin-bottom: 100px;
 }
 
@@ -52,8 +43,6 @@ body {
 .green_bg {
   background-color: @green_bg;
 }
-
-
 
 .header {
   max-width: 100%;
@@ -72,6 +61,10 @@ body {
 .my-flex-block-header {
   margin-right: 150px;
   display: flex;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 a {
@@ -109,7 +102,7 @@ a {
   border-color: @menu_border_color;
 }
 
-.header_menu_offset{
+.header_menu_offset {
   margin-left: 73px;
 }
 
@@ -171,14 +164,13 @@ a {
   color: @header_btn_hover_color;
 }
 
-.min_width_header_btn_large{
-    min-width: 75px!important;
-  }
+.min_width_header_btn_large {
+  min-width: 75px !important;
+}
 
-  .min_width_header_btn_small{
-    min-width: 50px;
-  }
-
+.min_width_header_btn_small {
+  min-width: 50px;
+}
 
 .my-flex-container-menu {
   height: 74px;
@@ -200,11 +192,11 @@ input[type="text"] {
   padding-left: @standart_offset + 14;
 }
 
-.logo{
+.logo {
   margin-bottom: 13px;
 }
 
-.menu{
+.menu {
   margin-top: 5px;
 }
 
@@ -220,7 +212,7 @@ input[type="text"] {
   width: 253px;
 }
 
-.search_offset{
+.search_offset {
   margin-left: -4px;
 }
 
@@ -296,7 +288,6 @@ input[type="text"] {
   width: 14px;
   color: white;
 }
-
 
 .my-flex-container-menu2 {
   max-width: 100%;
@@ -377,7 +368,6 @@ input[type="text"] {
   padding: 0 3px 0 3px;
 }
 
-
 .slider {
   font-size: 100px;
   height: 550px;
@@ -392,7 +382,6 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
 }
-
 
 .my-flex-container-demo1 {
   margin-top: 8px;
@@ -454,29 +443,24 @@ input[type="text"] {
   padding: 5px 10px 5px 10px;
 }
 
-
 .my-flex-container-presentation {
   margin-left: 33px;
-
-
 
 }
 
 .my-flex-block-presentation1 {
 
+}
+
+.position_presentation1 {
 
 }
 
-.position_presentation1{
+.position_presentation2 {
 
 }
 
-.position_presentation2{
-
-
-}
-
-.position_presentation3{
+.position_presentation3 {
 
 }
 
@@ -493,7 +477,6 @@ input[type="text"] {
   height: 280px;
 }
 
-
 .my-flex-container-separator {
   display: flex;
   flex-direction: row;
@@ -508,13 +491,19 @@ input[type="text"] {
   background-color: transparent;
 }
 
-.my-flex-block-separator{
+
+
+
+.my-flex-block-separator1 {
+  margin-left: -60px;
+  min-width: 86px !important;
+  width: 86px !important;
 
 }
-
-.my-flex-block-separator1{
-  margin-left: -60px;
-  min-width: 43px;
+.my-flex-block-separator2 {
+  margin-left: -53px;
+  min-width: 86px !important;
+  width: 86px !important;
 
 }
 
@@ -537,7 +526,6 @@ input[type="text"] {
   display: block;
   width: 985px;
 }
-
 
 .fa-angle-left {
   display: block;
@@ -568,7 +556,6 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
-
 .my-flex-container-new1 {
   margin-top: 33px;
   margin-left: 30px;
@@ -579,21 +566,27 @@ input[type="text"] {
 
 }
 
-.new_img{
-  margin: 0 9px 0 9px;
+.new_img {
+  margin: 0 0 0 0;
 }
 
-.offset_new{
+.new_img1 {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.offset_new {
   padding-left: 30px;
 }
 
-.my-flex-block-presentation3{
+.my-flex-block-presentation3 {
 
 }
 
-.featured_article_padding{
-}
+.featured_article_padding {
 
+}
 
 .my-flex-container-new2 {
   display: flex;
@@ -616,15 +609,16 @@ input[type="text"] {
   align-content: left;
 }
 
-.description_link{
+.description_link {
   color: #666666;
 }
 
-.description_link_dark{
+.description_link_dark {
   text-decoration: underline;
   color: #28342f;
 }
-.description_link_dark:hover{
+
+.description_link_dark:hover {
   color: @green_bg;
 }
 
@@ -666,11 +660,21 @@ input[type="text"] {
 }
 
 
-.product_logo{
+
+
+.featured_products {
+  margin-top: 50px;
 }
 
-.featured_products{
-  margin-top: 50px;
+.card_featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.indent_featured {
+  margin-top: 30px;
 }
 
 .separator_img_img2 {
@@ -679,25 +683,45 @@ input[type="text"] {
 }
 
 
-.featured_column_banner{
+.featured_column_banner {
   padding-left: 0;
 }
 
-.indent_featured{
-  margin-top: -70px;
+.container_banner{
+
 }
 
-.test_padding{
+.banner_img{
+  max-width: 100%;
+  height: auto;
+}
+
+.my-flex-block-separator_featured{
+  padding-left: 0!important;
+}
+
+.separator_text_featured {
+  padding-right: 0!important;
+  font-size: 16px;
+  color: @grey_color;
+  background-color: transparent;
+}
+
+.text_featured_width{
+  min-width: 160px!important;
+}
+
+.test_padding {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.featured_column_item{
+.featured_column_item {
   padding-right: 0 !important;
   margin-left: 50px;
 }
 
-.featured_column_banner{
+.featured_column_banner {
   padding-left: 0 !important;
 }
 
@@ -711,11 +735,16 @@ input[type="text"] {
 }
 
 .my-flex-block-featured_products2 {
-  padding: 0 0 0 0;
+  padding: 0 0 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.small_lot {
+  max-width: 100%;
+  height: auto;
 }
 
 .small__description {
@@ -748,7 +777,6 @@ input[type="text"] {
   margin-bottom: 8px;
 }
 
-
 .slide_btn {
   font-size: 15px;
 }
@@ -761,14 +789,9 @@ input[type="text"] {
   outline: none;
 }
 
-
-.separator_img_img_articles{
+.separator_img_img_articles {
   width: 950px;
   display: block;
-}
-
-.my-flex-block-separator2{
-  padding-left: -40px;
 }
 
 .my-flex-container-articles1 {
@@ -810,14 +833,20 @@ input[type="text"] {
 }
 
 .my-flex-container-products {
-  display: inline;
-
+  display: flex;
+  justify-content: center;
 }
+
+.product_logo {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px 0 10px;
+}
+
 
 .info {
   background-color: @menu_border_color;
 }
-
 
 .my-flex-container-info1 {
   display: flex;
@@ -827,13 +856,11 @@ input[type="text"] {
   margin-bottom: 40px;
 }
 
-
 .my-flex-container-info2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-
 
 .my-flex-block-info1 {
   display: flex;
@@ -842,7 +869,7 @@ input[type="text"] {
   align-items: flex-start;
 }
 
-.my-flex-block-info{
+.my-flex-block-info {
   padding-left: 100px;
 }
 
@@ -982,7 +1009,6 @@ input[type="text"] {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 
 .my-flex-container-test {
   display: flex;
