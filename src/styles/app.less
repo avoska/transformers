@@ -518,8 +518,8 @@ input[type="text"] {
 }
 
 .separator_img2 {
-  height: 9px;
-  width: 1009px;
+ background: url("../img/separator_featured.png") no-repeat center;
+  background-size: contain ;
 }
 
 .separator_img_img {
@@ -694,6 +694,7 @@ input[type="text"] {
 .banner_img{
   max-width: 100%;
   height: auto;
+  background: url("../img/sale_banner.png");
 }
 
 .my-flex-block-separator_featured{
@@ -1029,25 +1030,11 @@ input[type="text"] {
   width: 120px;
 }
 
-@keyframes testAnimation {
-  0% {
-    background-color: red;
-  }
-  30% {
-    width: 500px;
-    background-color: yellow;
-  }
-  60% {
-    width: 120px;
-    background-color: red;
-  }
-  90% {
-    width: 500px;
-    background-color: blue;
-  }
-  100% {
-    background-color: orange;
-  }
+.row_featured{
+  display: flex;
 }
-
+.container_featured_main{
+    display: flex;
+    flex-direction: column;
+  }
 
